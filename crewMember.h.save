@@ -1,0 +1,22 @@
+#include <string>
+
+using namespace std;
+
+class CrewMember {
+	public:
+		string getName();
+		void setName(string name1);
+		int getID();
+		void setID(int ID1);
+		string getType();
+		void setType(string type1);
+		string getStatus();
+		void setStatus(string status1);
+		CrewMember();
+		CrewMember(string name1, int ID1, string type1, string status1);
+	private:
+		string name;
+		int ID;
+ 		string type;
+		string status;
+};

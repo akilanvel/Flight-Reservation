@@ -1,0 +1,13 @@
+#include "crewMemberCollection.h"
+#include <vector>
+#include <string>
+
+using namespace std;
+
+CrewMemberCollection::CrewMemberCollection() {
+
+}
+
+void addCrewMember(CrewMember crewMember) {
+	crewM
+}

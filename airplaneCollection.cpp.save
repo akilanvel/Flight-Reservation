@@ -1,0 +1,47 @@
+#include <vector>
+#include <string>
+#include <iostream>
+#include "airplaneCollection.h"
+
+using namespace std;
+
+AirplaneCollection::AirplaneCollection() {
+
+}
+
+void AirplaneCollection::addAirplane(Airplane airplane) {
+	airplanes.push_back(airplane);
+}
+
+void AirplaneCollection::removeAirplane(string tailNumber) {
+	for (int i = 0; i < airplanes.size(); i++) {
+		if (airplanes.at(i).getTailNumber().compare(tailNumber) == 0) {
+			airplanes.erase(airplanes.begin() + i);
+		}
+	}
+}
+
+void AirplaneCollection::editAirplane(string tailNumber, string status) {
+	for (int i = 0; i < airplanes.size(); i++) {
+		if (airplanes.at(i).getTailNumber().compare(tailNumber) == 0) {
+			airplanes.at(i).setStatus(status);
+		}
+	}
+}
+
+Airplane AirplaneCollection::findAirplane(string tailNumber) {
+	for (int i = 0; i < airplanes.size(); i++) {
+		if (airplanes.at(i).getTailNumber().compare(tailNumber) == 0) {
+			return airplanes.at(i);
+		}
+	}
+}
+
+void AirplaneCollection::printAirplane(string tailNumber) {
+	for (int i = 0; i < airplanes.size(); i++) {
+		if (airplanes.at(i).getTailNumber().compare(tailNumber) == 0) {
+			cout << 
+		}
+	}
+}
+
