@@ -13,10 +13,6 @@ void save(ofstream fout, vector<CrewMember> crewMembers, vector<Airplane> airpla
 void load(ifstream fin, vector<CrewMember> crewMembers, vector<Airplane> airplanes, vector<Flight> flights);
 
 int main() {
-	cout << "Name: Akilan Gnanavel" << endl;
-	cout << "Course: CSCE 1040" << endl;
-	cout << "Email: akilangnanavel@my.unt.edu" << endl;
-	cout << "Program: Homework 4" << endl;
 
 	CrewMemberCollection crewMembers;
 	AirplaneCollection airplanes;
